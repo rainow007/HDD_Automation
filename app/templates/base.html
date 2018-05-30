@@ -1,0 +1,409 @@
+<<<<<<< HEAD
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../static/favicon.ico">
+
+    <title>红叮当 - 自动化测试</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../static/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../static/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../static/assets/js/ie-emulation-modes-warning.js"></script>
+    <link href="../static/prismjs/prism.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../static/favicon.ico">
+  <!-- <link rel="icon" href="../static/beyondh.ico"> -->
+
+  <title>红叮当 - 自动化测试</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="../static/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/css/dashboard.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../static/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="../static/assets/js/ie-emulation-modes-warning.js"></script>
+  <link href="../static/prismjs/prism.css" rel="stylesheet" />
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+>>>>>>> the lastst version on 2018/05
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<<<<<<< HEAD
+    <!-- <link rel="stylesheet" href="responsive-nav.css">
+    <script src="../static/assets/js/responsive-nav.js"></script> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/bootstrap/easyui.css">
+=======
+  <!-- <link rel="stylesheet" href="responsive-nav.css">
+    <script src="../static/assets/js/responsive-nav.js"></script> -->
+
+  <!-- <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/bootstrap/easyui.css">
+>>>>>>> the lastst version on 2018/05
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/demo/demo.css">
+    <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script> -->
+<<<<<<< HEAD
+    
+    <style>
+   .nav .dropdown-menu li  { margin-top: 10px;}
+
+   .nav .dropdown-menu li a:hover{
+
+           background: #428bca;
+           color: #FFF;
+
+
+   }
+
+   .dropdown-menu{position:relative;float:none;color:#337ab7; padding: 0px 0px 8px 0px;
+   }
+
+   .dropdown-menu  li a{
+    padding:3px 47px;
+    color: #337ab7;
+    background: #eee;
+   } 
+a{ cursor: pointer}
+
+    </style>
+  </head>
+
+
+  <!-- <script>
+=======
+  <!-- Bootstrap core JavaScript
+      ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="http://lib.sinaapp.com/js/jquery/1.12.4/jquery-1.12.4.min.js"></script>
+  <!-- <script src="jquery.js"></script> -->
+  <script src="../static/assets/js/jquery.pagination.js"></script>
+  <script src="../static/assets/js/jquery.form.js"></script>
+  <script src="../static/assets/js/bootstrap-paginator.js"></script>
+  <script>window.jQuery || document.write('<script src="../static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="../static/dist/js/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <script src="../static/assets/js/vendor/holder.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../static/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="../static/prismjs/prism.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('ul.nav > li').each(function (index, item) {
+        var class_name = location.pathname.split('/')[1];
+        if (class_name && $(this).hasClass(class_name)) {
+          $(this).addClass("active").siblings().removeClass("active");
+        }
+      });
+    });
+    function subForm() {
+      var form = $("form[id=fileForm]");
+      //             var req = new XMLHttpRequest();
+      //             req.open("post", "${pageContext.request.contextPath}/public/testupload", false);
+      //             req.send(form);
+      var fileField = $.trim($("#File1").val());
+      if (fileField != "") {
+        var opts = {
+          url: "/uploadSomefiles",
+          type: "POST",
+          // data: form,
+          // processData: false,
+          // contentType: false,
+          success: function (data) {
+            msg = data['message']
+            alert(msg)
+            // window.clearInterval(timer);
+            console.log("over..");
+          },
+          error: function (e) {
+            alert("未知错误!");
+            // window.clearInterval(timer);
+          }
+        };
+        form.ajaxSubmit(opts);
+      } else {
+        alert("未选择文件，请先选择文件...")
+      }
+      return false;
+    }
+
+
+
+  // $(function () {
+  //     $("#file_input").on("change", function () {
+  //       var $file = $(this);
+  //       var fileObj = $file[0];
+
+  //       var windowURL = window.URL || window.webkitURL;
+  //       var dataURL;
+  //       var p = $("p");
+
+  //       if (fileObj && fileObj.files && fileObj.files[0]) {
+  //         dataURL = windowURL.createObjectURL(fileObj.files[0]);
+  //         p.text(dataURL);
+  //       } else {
+  //         dataURL = $file.val();
+  //         var imgObj = document.getElementById("preview");
+  //         imgObj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+  //         imgObj.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = dataURL;
+
+  //       }
+  //     });
+  //   }); 
+  </script>
+  <style>
+    .nav .dropdown-menu li {
+      margin-top: 10px;
+    }
+
+    .nav .dropdown-menu li a:hover {
+
+      background: #428bca;
+      color: #FFF;
+
+
+    }
+
+    .dropdown-menu {
+      position: relative;
+      float: none;
+      color: #337ab7;
+      padding: 0px 0px 8px 0px;
+    }
+
+    .dropdown-menu li a {
+      padding: 3px 47px;
+      color: #337ab7;
+      background: #eee;
+    }
+
+    a {
+      cursor: pointer
+    }
+  </style>
+</head>
+
+
+<!-- <script>
+>>>>>>> the lastst version on 2018/05
+    var navigation = responsiveNav("#nav");
+    var navigation = responsiveNav("#nav", { // Selector: The ID of the wrapper
+    animate: true, // Boolean: 是否启动CSS过渡效果（transitions）， true 或 false
+    transition: 400, // Integer: 过渡效果的执行速度，以毫秒（millisecond）为单位
+    label: "Menu", // String: Label for the navigation toggle
+    insert: "after", // String: Insert the toggle before or after the navigation
+    customToggle: "", // Selector: Specify the ID of a custom toggle
+    openPos: "relative", // String: Position of the opened nav, relative or static
+    jsClass: "js", // String: 'JS enabled' class which is added to <html> el
+    debug: false, // Boolean: Log debug messages to console, true 或 false
+    init: function(){}, // Function: Init callback
+    open: function(){}, // Function: Open callback
+    close: function(){} // Function: Close callback
+});
+  </script> -->
+<<<<<<< HEAD
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">红叮当</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <!-- <li><a href="https://github.com/lovesoo/Taffy" target="_blank">项目</a></li>
+            <li><a href="http://www.cnblogs.com/lovesoo" target="_blank">博客</a></li>
+            <li><a href="http://qm.qq.com/cgi-bin/qm/qr?k=7ExYUJ1a34pFJIUQjEDkF4mvN3AksZ2g" target="_blank">联络</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="nav" class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="index active"><a href="index">首页<span class="sr-only">(current)</span></a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">测试用例
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li class="case1"><a href="case1">红叮当API测试用例</a></li>
+                    <li class="case2"><a href = "case2">红叮当APP测试用例</a></li>
+                    <li class="case3"><a href="case3">红叮当性能测试用例</a></li>
+                    <li class="case4"><a href="case4">OTA性能测试用例</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">测试报告
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li class="report"><a href="report1">红叮当API测试报告</a></li>
+                    <li class="report"><a href="report2">红叮当APP测试报告</a></li>
+                    <li class="report"><a href="report3">红叮当性能测试报告</a></li>
+                    <li class="report"><a href="report3">OTA性能测试报告</a></li>
+                </ul>
+            </li>
+            <li class="config"><a href="config">环境配置</a></li>
+          </ul>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://lib.sinaapp.com/js/jquery/1.12.4/jquery-1.12.4.min.js"></script>
+    <!-- <script src="jquery.js"></script> -->
+    <script src="../static/assets/js/jquery.pagination.js"></script>
+    <script src="../static/assets/js/bootstrap-paginator.js"></script>
+    <script>window.jQuery || document.write('<script src="../static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../static/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../static/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../static/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../static/prismjs/prism.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('ul.nav > li').each(function(index, item){
+        var class_name = location.pathname.split('/')[1];
+        if(class_name && $(this).hasClass(class_name)){
+            $(this).addClass("active").siblings().removeClass("active");}
+          });
+        });
+    </script>
+  </body>
+</html>
+=======
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">红叮当</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- <li><a href="https://github.com/lovesoo/Taffy" target="_blank">项目</a></li>
+            <li><a href="http://www.cnblogs.com/lovesoo" target="_blank">博客</a></li>
+            <li><a href="http://qm.qq.com/cgi-bin/qm/qr?k=7ExYUJ1a34pFJIUQjEDkF4mvN3AksZ2g" target="_blank">联络</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="nav" class="col-sm-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+          <li class="index active">
+            <a href="index">首页
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">测试用例
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="case1">
+                <a href="case1">红叮当API测试用例</a>
+              </li>
+              <li class="case2">
+                <a href="case2">红叮当APP测试用例</a>
+              </li>
+              <li class="case3">
+                <a href="case3">红叮当性能测试用例</a>
+              </li>
+              <li class="case4">
+                <a href="case4">OTA性能测试用例</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">测试报告
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="report">
+                <a href="report1">红叮当API测试报告</a>
+              </li>
+              <li class="report">
+                <a href="report2">红叮当APP测试报告</a>
+              </li>
+              <li class="report">
+                <a href="report3">红叮当性能测试报告</a>
+              </li>
+              <li class="report">
+                <a href="report3">OTA性能测试报告</a>
+              </li>
+            </ul>
+          </li>
+          <li class="config">
+            <a href="config">环境配置</a>
+          </li>
+        </ul>
+      </div>
+
+      {% block content %} {% endblock %}
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+>>>>>>> the lastst version on 2018/05

@@ -1,0 +1,24 @@
+ 在 E:\Taffy-master\Taffy_Web-master 路径下进入python shell的交互环境，执行:
+ >>from app import db
+ >>db.drop_all()
+ >>db.create_all()
+ >>from app.models import User
+ *******************************************
+ >>User.query.all()
+ >>Username = User(username='admin')
+ >>print Username.username
+ admin
+ >>print Username.login_count
+ 0
+ Count = User(login_count = 1)
+ >>print Count.login_count
+ 1
+ >>db.session.add(Username)
+ >>db.session.commit()
+ >>User.query.all() 
+ 
+ ********************************************
+>>> from werkzeug.security import generate_password_hash
+>>> Admin = User(username='superadmin',password_hash=generate_password_hash('test123456'))
+>>> db.session.add(Admin)
+>>> db.session.commit()

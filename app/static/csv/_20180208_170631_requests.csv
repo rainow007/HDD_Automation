@@ -1,0 +1,3 @@
+"Method","Name","# requests","# failures","Median response time","Average response time","Min response time","Max response time","Average Content Size","Requests/s"
+"GET","/api/v1/pms/api/inn/get?bid=edeb10959582205cbee87c82ba6ceaab&innId=4034",6,0,88,88,61,125,481,2.09
+"None","Total",6,0,88,88,61,125,481,2.09

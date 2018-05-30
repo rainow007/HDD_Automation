@@ -1,0 +1,5 @@
+{auto_send_BB: false, csrf_token: !!python/unicode 'IjY3MTVkYmI4NWMyMzFkOWFiMjM2YjNlYTIxYjExZWNhMDlkNTdlMzMi.DUH45A.wnJ6ByjPKUFe-YGHdohmWxvKF9g',
+  mail_host_BB: !!python/unicode 'smtp.163.com', mail_port_BB: 25, mail_pwd_BB: !!python/unicode '56752308',
+  mail_subject_BB: "TAFFY_\u6D4B\u8BD5\u62A5\u544A", mail_to_BB: !!python/unicode 'lovesoo@163.com;lovesoo@126.com',
+  mail_user_BB: !!python/unicode 'monitord3@163.com', report_name_BB: !!python/unicode 'test_report',
+  submit_button: true, taffy_dir_BB: !!python/unicode 'E:\testcase\t1'}

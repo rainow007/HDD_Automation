@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+{auto_send: true, csrf_token: !!python/unicode 'IjY3MTVkYmI4NWMyMzFkOWFiMjM2YjNlYTIxYjExZWNhMDlkNTdlMzMi.DUMRvQ.LHOO8F57DFMj8SsR1vypXzsAkQ0',
+  mail_host: !!python/unicode 'smtp.163.com', mail_port: 25, mail_pwd: !!python/unicode 'test621067',
+  mail_subject: "TAFFY_\u6D4B\u8BD5\u62A5\u544A", mail_to: !!python/unicode 'umask755644@163.com',
+  mail_user: !!python/unicode 'umask755644@163.com', report_name: !!python/unicode 'test_report',
+  submit_button: true, taffy_dir: !!python/unicode 'E:\Apartment\Apartment_UItest'}
+=======
+{
+  auto_send: true, 
+  csrf_token: !!python/unicode 'ImE0MTQ4YTVmOGJiYmQyYjY2NDE2NjUwZGQ1YzFiNWNmYjM1NGM3OTgi.DdMHag.pGfD9upsITH5TEGp42VMqkm4RsA',
+  mail_host: !!python/unicode 'smtp.163.com', 
+  mail_port: 25, 
+  mail_pwd: !!python/unicode 'test621067',
+  mail_subject: "TAFFY_\u6D4B\u8BD5\u62A5\u544A", 
+  mail_to: !!python/unicode 'umask755644@163.com',
+  mail_user: !!python/unicode 'umask755644@163.com', 
+  report_name: !!python/unicode 'dingdang_report',
+  submit_button: true
+  }
+>>>>>>> the lastst version on 2018/05

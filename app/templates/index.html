@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+{% extends "base.html" %}
+{% block content %}
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">红叮当自动化测试系统</h1>
+            <h4><code class="language-python">用于红叮当场景自动化测试</code></h4>
+        </div>
+=======
+{% extends "base.html" %} {% block content %}
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header">
+        红叮当自动化测试系统
+        <span>
+            <span style="margin-left: 900px; font-size: 20px; "> {% if current_user.is_authenticated %} 当前用户: {{ current_user.username }}{% endif %}
+                <a href="{{url_for('logout')}}">注销</a>
+            </span>
+        </span>
+    </h1>
+    <h4>
+        <code class="language-python">用于红叮当场景自动化测试</code>
+    </h4>
+</div>
+>>>>>>> the lastst version on 2018/05
+{% endblock %}

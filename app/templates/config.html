@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+
+<!-- 详解请参见https://zhuanlan.zhihu.com/p/23374605 ，即消息框的渲染 -->
+<!-- 渲染表单 -->
+<div id="config1" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" >
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+    <div class="alert alert-{{ category }} alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
+<<<<<<< HEAD
+<!--提交表单至此处-->
+    <p style='font-size:24px;width:300px;height:51px;'><strong>红叮当API环境配置>>><strong></p>
+=======
+    <!--提交表单至此处-->
+    <p style='font-size:24px;width:300px;height:51px;'><strong>红叮当API环境配置>>><strong></p>
+    <span style="margin-left: 135px;font-size: 15px;">上传本地用例:</span>
+    <form id="fileForm" method="POST" onsubmit="return subForm()" enctype="multipart/form-data" class="bl-form bl-formhor fl"
+        style="margin-left: 95px; margin-bottom: 15px; ">
+        <input id="File1" type="file" class="file" multiple="" name="file[]" style=" margin-left: 160px;" />
+        <input type="submit" class="btn btn-success" style=" margin-top: -50px; margin-left: 500px;" />
+    </form>
+    
+
+>>>>>>> the lastst version on 2018/05
+    {{ wtf.quick_form(form_a,form_type="horizontal",horizontal_columns=('lg', 2, 6),button_map={"submit_button":"success"}) }}
+    <p style='font-size:24px;width:300px;height:51px;'><strong>红叮当APP环境配置>>><strong></p>
+    {{ wtf.quick_form(form_aa,form_type="horizontal",horizontal_columns=('lg', 2, 6),button_map={"submit_button":"success"}) }}
+    <p style='font-size:24px;width:300px;height:51px;'><strong>红叮当性能环境配置>>></strong></p>   
+    {{ wtf.quick_form(form_aaa,form_type="horizontal",horizontal_columns=('lg', 2, 6),button_map={"submit_button":"success"}) }}
+    <p style='font-size:24px;width:300px;height:51px;'><strong>OTA性能测试配置>>><strong></p>
+    {{ wtf.quick_form(form_aaaa,form_type="horizontal",horizontal_columns=('lg', 2, 6),button_map={"submit_button":"success"}) }}
+</div>
+<<<<<<< HEAD
+{% endblock %}
+=======
+
+{% endblock %}
+
+>>>>>>> the lastst version on 2018/05

@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+{auto_send_AA: false, csrf_token: !!python/unicode 'IjY3MTVkYmI4NWMyMzFkOWFiMjM2YjNlYTIxYjExZWNhMDlkNTdlMzMi.DUMbTQ.YOqSuy2ZvMn8uRPue99I9VWHVSs',
+  mail_host_AA: !!python/unicode 'smtp.163.com', mail_port_AA: 25, mail_pwd_AA: !!python/unicode '56752308',
+  mail_subject_AA: "TAFFY_\u6D4B\u8BD5\u62A5\u544A", mail_to_AA: !!python/unicode 'lovesoo@163.com;lovesoo@126.com',
+  mail_user_AA: !!python/unicode 'monitord3@163.com', report_name_AA: !!python/unicode 'test_report',
+=======
+{auto_send_AA: true, csrf_token: !!python/unicode 'ImE0MTQ4YTVmOGJiYmQyYjY2NDE2NjUwZGQ1YzFiNWNmYjM1NGM3OTgi.DdLfCg.RCR3yTA3XRkTs8BYXbFFbvh0qBo',
+  mail_host_AA: !!python/unicode 'smtp.163.com', mail_port_AA: 25, mail_pwd_AA: !!python/unicode 'IamBJ781121523',
+  mail_subject_AA: "TAFFY_\u6D4B\u8BD5\u62A5\u544A", mail_to_AA: !!python/unicode 'umask755644@163.com',
+  mail_user_AA: !!python/unicode 'umask755644@163.com', report_name_AA: !!python/unicode 'test_report',
+>>>>>>> the lastst version on 2018/05
+  submit_button: true, taffy_dir_AA: !!python/unicode 'E:\PerformanceTest\DingDang_Automation\'}

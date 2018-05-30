@@ -1,0 +1,5 @@
+{auto_send_A: false, csrf_token: !!python/unicode 'IjY3MTVkYmI4NWMyMzFkOWFiMjM2YjNlYTIxYjExZWNhMDlkNTdlMzMi.DUHx0g.9gUbl5T8UVHzbsqcDeLwrkF1QRA',
+  mail_host_A: !!python/unicode 'smtp.163.com', mail_port_A: 25, mail_pwd_A: !!python/unicode '56752308',
+  mail_subject_A: "TAFFY_\u6D4B\u8BD5\u62A5\u544A", mail_to_A: !!python/unicode 'lovesoo@163.com;lovesoo@126.com',
+  mail_user_A: !!python/unicode 'monitord3@163.com', report_name_A: !!python/unicode 'test_report',
+  submit_button: true, taffy_dir_A: !!python/unicode 'E:\testTaffy'}

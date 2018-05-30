@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0" />
+    <title>登录页</title>
+    <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../static/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../static/assets/css/toastr.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../static/css/dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../static/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../static/assets/js/ie-emulation-modes-warning.js"></script>
+    
+    <link href="../static/prismjs/prism.css" rel="stylesheet" />
+    <link rel="icon" href="../static/favicon.ico">
+    <style>
+        .form-group {
+            margin-left: 37%;
+            width: 450px;
+        }
+
+        .col-xs-6 {
+            width: 480px
+        }
+
+        #web_bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            min-width: 1000px;
+            z-index: -10;
+            zoom: 1;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+        }
+    </style>
+</head>
+
+<!-- <body style="background:url(../static/assets/img/1.jpg)"> -->
+
+<body>
+    <div class="wrapper">
+        <!--背景图片-->
+        <div id="web_bg" style="background-image: url(../static/assets/img/1.jpg);"></div>
+        <!--其他代码 ... -->
+    </div>
+
+    <div class="box">
+        <div class="login-box">
+            <div class="login-title text-center">
+                <h1>
+                    <small style="font-size:30px;font-weight:900;color:lightyellow">红叮当自动化测试交互平台</small>
+                </h1>
+            </div>
+            <div class="login-content " style=" margin-top: -100px; margin-right: -50px; ">
+                <div class="form">
+                    <form action="{{ url_for("login") }}" method="post" name="login">
+                        {{ form.csrf_token }}
+                        <div class="form-group" style="margin-top:200px;margin-left:37%">
+                            <div class="col-xs-12  ">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-user"></span>
+                                    </span>
+                                    <input type="text" id="username" name="username" class="form-control" placeholder="用户名">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12" style="margin-bottom:20px;margin-top:25px">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-lock"></span>
+                                    </span>
+                                    <input type="password" id="password" name="password" class="form-control" placeholder="密码">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-6 link">
+                                <p class="text-center remove-margin" style="margin-left: -383px;margin-top: 10px;font-size:20px;">
+                                    <small style="color:maroon">{{ form.remember_me }}
+                                        <strong>记住我？</strong>
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group form-actions">
+                            <div class="col-xs-4 col-xs-offset-4 " style="margin-top:30px">
+                                <button type="submit" class="btn btn-sm btn-info" style="width:160px;font-size:15px;margin-top:15px">
+                                    <span class="glyphicon glyphicon-off"></span> 登录</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-6 link" style="margin-left:-590px;margin-top:110px">
+                                <p class="text-center remove-margin" style=" font-size:20px;margin-top:15px">
+                                    <small style="color:lightyellow">忘记密码？</small>
+                                    <a href="http://www.beyondh.com/">
+                                        <small style="color:lightyellow;text-decoration:underline">找回</small>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col-xs-6 link" style="font-size:20px;margin-top:-38px;margin-left:260px">
+                                <p class="text-center remove-margin">
+                                    <small style="color:lightyellow">还没注册?</small>
+                                    <a href="http://www.beyondh.com/">
+                                        <small style="color:lightyellow;text-decoration:underline">注册</small>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        {% for category, message in get_flashed_messages(with_categories=true) %}
+        <div class="alert alert-{{ category }} alert-dismissible" style=" margin-top: 341px; color: red; font-size: 24px; " id = "showFlash">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            {{message}}
+        </div>
+        {% endfor %}
+    </div>
+    </div>
+    <div style="text-align:center;margin-top:-125px;margin-left:800px">
+        <p style="color:lightgoldenrodyellow;font-size:18px">From：
+            <a href="http://www.beyondh.com/" target="_blank" style="text-decoration:underline;color:lightgoldenrodyellow">别样红测试团队</a>
+        </p>
+    </div>
+    <script src="http://lib.sinaapp.com/js/jquery/1.12.4/jquery-1.12.4.min.js"></script>
+    <!-- <script src="jquery.js"></script> -->
+    <script src="../static/assets/js/jquery.pagination.js"></script>
+    <script src="../static/assets/js/bootstrap-paginator.js"></script>
+    <script>window.jQuery || document.write('<script src="../static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../static/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../static/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../static/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../static/prismjs/prism.js"></script>
+    <script src="../static/assets/js/toastr.min.js"></script>
+    <!-- <script type="text/javascript">
+        toastr.options.positionClass = 'toast-bottom-center';
+
+        function showError(message){
+            if($("showFlash")){
+                toastr.error(message);
+            }
+        }
+    </script> -->
+</body>
+
+</html>
